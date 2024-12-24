@@ -1,8 +1,8 @@
 <script>
-import { RouterLink } from "vue-router"
+import NavLink from "./ui/NavLink.vue"
 
 export default {
-	components: { RouterLink },
+	components: { NavLink },
 	methods: {
 		goHome() {
 			this.$router.push("/")
@@ -17,15 +17,9 @@ export default {
 			<h1 @click="goHome" class="logo">Code Flow</h1>
 
 			<nav class="nav">
-				<router-link to="/" class="link" active-class="--active">
-					Главная
-				</router-link>
-				<router-link to="/projects" class="link" active-class="--active">
-					Проекты
-				</router-link>
-				<router-link to="/new-order" class="link" active-class="--active">
-					Сделать заказ
-				</router-link>
+				<nav-link href="/">Главная</nav-link>
+				<nav-link href="/projects">Проекты</nav-link>
+				<nav-link href="/new-order">Сделать заказ</nav-link>
 			</nav>
 		</div>
 	</header>
@@ -90,47 +84,5 @@ export default {
 	display: flex;
 	align-items: center;
 	column-gap: 15px;
-}
-
-.link {
-	font-size: 1.15rem;
-	color: var(--text);
-	font-weight: 500;
-	position: relative;
-	transition-property: color, opacity, translate;
-	transition-duration: 0.25s, 0.15s, 0.15s;
-
-	&:hover {
-		color: var(--blue);
-	}
-
-	&:active {
-		opacity: 0.85;
-		translate: 0 1.5px;
-	}
-
-	&::after {
-		content: "";
-		position: absolute;
-		bottom: -2px;
-		left: 0;
-
-		width: 0;
-		height: 2px;
-		background-color: var(--green);
-		border-radius: 2px;
-
-		transition: width 0.25s;
-	}
-
-	&.--active {
-		color: var(--text);
-		opacity: 1;
-		translate: 0;
-
-		&::after {
-			width: 100%;
-		}
-	}
 }
 </style>
