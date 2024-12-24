@@ -1,9 +1,10 @@
 <script>
 import { RouterView } from "vue-router"
+import AppFooter from "./components/AppFooter.vue"
 import AppHeader from "./components/AppHeader.vue"
 
 export default {
-	components: { RouterView, AppHeader }
+	components: { RouterView, AppHeader, AppFooter }
 }
 </script>
 
@@ -19,6 +20,8 @@ export default {
 			</router-view>
 		</div>
 	</main>
+
+	<app-footer />
 </template>
 
 <style scoped lang="scss">

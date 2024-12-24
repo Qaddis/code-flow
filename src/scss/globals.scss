@@ -34,6 +34,13 @@ body {
 	font-family: var(--inter);
 }
 
+@supports (scrollbar-width: thin) {
+	body {
+		scrollbar-width: thin;
+		scrollbar-color: var(--blue) var(--add);
+	}
+}
+
 @supports selector(::-webkit-scrollbar) {
 	::-webkit-scrollbar {
 		width: 8px;
@@ -46,12 +53,5 @@ body {
 	::-webkit-scrollbar-thumb {
 		background: linear-gradient(45deg, var(--blue), var(--green));
 		border-radius: 5px;
-	}
-}
-
-@supports (scrollbar-width: thin) {
-	body {
-		scrollbar-width: thin;
-		scrollbar-color: var(--blue) var(--add);
 	}
 }
