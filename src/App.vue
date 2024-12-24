@@ -1,7 +1,23 @@
-<script></script>
+<script>
+import { RouterView } from "vue-router"
+
+export default {
+	components: { RouterView }
+}
+</script>
 
 <template>
-	<h1>Hello world</h1>
+	<main class="main">
+		<div class="wrapper">
+			<router-view />
+		</div>
+	</main>
 </template>
 
-<style scoped lang="scss"></style>
+<style scoped lang="scss">
+.main {
+}
+
+.wrapper {
+}
+</style>

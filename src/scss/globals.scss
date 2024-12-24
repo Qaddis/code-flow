@@ -1,0 +1,35 @@
+/* - Preparing for styling */
+
+/* Reset default styles */
+@use "reset";
+
+/* Import fonts */
+@import url("https://fonts.googleapis.com/css2?family=Bangers&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* Set variables */
+:root {
+	--dark: #2a2d34;
+	--dark-add: #333740;
+	--light: #fafafa;
+	--blue: #7494ea;
+	--green: #1b998b;
+
+	--main: var(--dark);
+	--add: var(--dark-add);
+	--text: var(--light);
+
+	--inter: "Inter", serif;
+	--jost: "Jost", serif;
+	--bangers: "Bangers", serif;
+}
+
+/* - Styling - */
+html {
+	font-size: 16px;
+}
+
+body {
+	background-color: var(--main);
+	color: var(--text);
+	font-family: var(--inter);
+}
