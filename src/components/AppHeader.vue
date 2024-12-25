@@ -51,7 +51,7 @@ export default {
 	background: linear-gradient(45deg, var(--blue), var(--green));
 	background-clip: text;
 	color: transparent;
-	padding: 0 0.35rem;
+	padding-right: 0.2rem;
 	user-select: none;
 	cursor: pointer;
 	position: relative;
