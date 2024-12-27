@@ -107,7 +107,7 @@ export default {
 	font-family: var(--bangers);
 	font-size: 5rem;
 	padding-right: 0.15em;
-	background: linear-gradient(45deg, var(--blue), var(--green));
+	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
 	position: relative;
@@ -122,7 +122,7 @@ export default {
 		left: 50%;
 		translate: -50% -50%;
 
-		background: linear-gradient(45deg, var(--blue), var(--green));
+		background: var(--gradient);
 		opacity: 0.45;
 		filter: blur(20px);
 	}

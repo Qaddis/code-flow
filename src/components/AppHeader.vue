@@ -49,7 +49,7 @@ export default {
 .logo {
 	font-size: 2.5rem;
 	font-family: var(--bangers);
-	background: linear-gradient(45deg, var(--blue), var(--green));
+	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
 	padding-right: 0.2rem;
@@ -67,7 +67,7 @@ export default {
 		left: 50%;
 		translate: -50% -50%;
 
-		background: linear-gradient(45deg, var(--blue), var(--green));
+		background: var(--gradient);
 		opacity: 0.35;
 		filter: blur(15px);
 
