@@ -32,7 +32,7 @@ export default {
 
 	&__title {
 		font-family: var(--jost);
-		font-size: 1.5rem;
+		font-size: 1.35rem;
 		font-weight: 600;
 		text-align: center;
 	}
@@ -44,8 +44,8 @@ export default {
 		top: 50%;
 		left: 50%;
 		translate: -50% -50%;
-		width: 102%;
-		height: 102%;
+		width: 103%;
+		height: 103%;
 		background: conic-gradient(
 			from var(--angle),
 			var(--blue) 0%,

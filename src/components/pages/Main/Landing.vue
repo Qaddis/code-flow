@@ -85,7 +85,7 @@ export default {
 <style scoped lang="scss">
 .landing {
 	width: 100%;
-	height: calc(100vh - 175px);
+	height: calc(100vh - 176px);
 
 	display: flex;
 	align-items: center;
@@ -105,8 +105,8 @@ export default {
 
 .logo {
 	font-family: var(--bangers);
-	font-size: 5rem;
-	padding-right: 0.15em;
+	font-size: 4.5rem;
+	padding-right: 0.25em;
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
@@ -130,7 +130,7 @@ export default {
 
 .lure {
 	font-weight: 600;
-	font-size: 2.5rem;
+	font-size: 2.35rem;
 	line-height: 1.1;
 }
 

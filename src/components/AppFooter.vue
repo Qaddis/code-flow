@@ -90,7 +90,7 @@ export default {
 }
 
 .copyright {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
 	font-weight: 500;
 	text-align: center;
 	margin-top: 15px;

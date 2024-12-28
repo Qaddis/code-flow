@@ -47,12 +47,12 @@ export default {
 }
 
 .logo {
-	font-size: 2.5rem;
+	font-size: 2.3rem;
 	font-family: var(--bangers);
 	background: var(--gradient);
 	background-clip: text;
 	color: transparent;
-	padding-right: 0.2rem;
+	padding-right: 0.3rem;
 	user-select: none;
 	cursor: pointer;
 	position: relative;
