@@ -7,9 +7,9 @@ export default {
 </script>
 
 <template>
-	<h2 class="heading" :class="type">
+	<component class="heading" :class="type" :is="type === 'page' ? 'h2' : 'h3'">
 		<slot />
-	</h2>
+	</component>
 </template>
 
 <style scoped lang="scss">

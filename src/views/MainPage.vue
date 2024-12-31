@@ -3,11 +3,13 @@ import Landing from "../components/pages/Main/Landing.vue"
 import TechCard from "../components/pages/Main/TechCard.vue"
 import AppHeading from "../components/ui/AppHeading.vue"
 import GradientButton from "../components/ui/GradientButton.vue"
+import { techs } from "../data"
 
 export default {
-	components: { Landing, Heading: AppHeading, TechCard, GradientButton },
+	components: { Landing, AppHeading, TechCard, GradientButton },
 	data() {
 		return {
+			techs,
 			showHint: false,
 			hintIndex: 0,
 			hintTexts: [
@@ -15,21 +17,7 @@ export default {
 				"Мы используем только актуальные и поддерживаемые технологии и хорошо оптимизируем каждый проект",
 				"Мы тщательно тестируем каждый проект и своевременно исправляем баги, что гарантирует бесперебойную работу вашего сайта/бота"
 			],
-			hintProcessed: false,
-			techs: [
-				"HTML",
-				"CSS",
-				"SCSS",
-				"Tailwind",
-				"JavaScript",
-				"TypeScript",
-				"Python",
-				"Golang",
-				"React",
-				"Vue",
-				"Next",
-				"Nuxt"
-			]
+			hintProcessed: false
 		}
 	},
 	methods: {
@@ -50,6 +38,9 @@ export default {
 				this.hintIndex = index
 			}
 		}
+	},
+	mounted() {
+		document.title = "Главная | Code Flow"
 	}
 }
 </script>
@@ -60,7 +51,7 @@ export default {
 			<landing />
 
 			<section class="technologies">
-				<heading type="section">Технологии</heading>
+				<app-heading type="section">Технологии</app-heading>
 
 				<div class="container">
 					<tech-card v-for="(tech, index) in techs" :key="index" :tech />
@@ -68,7 +59,7 @@ export default {
 			</section>
 
 			<section class="why-us">
-				<heading type="section">Почему именно мы?</heading>
+				<app-heading type="section">Почему именно мы?</app-heading>
 
 				<ul class="advantages">
 					<li
@@ -102,7 +93,7 @@ export default {
 			</section>
 
 			<section class="links">
-				<heading type="section">Решайтесь!</heading>
+				<app-heading type="section">Решайтесь!</app-heading>
 
 				<div class="buttons">
 					<gradient-button @click="$router.push('/projects')">

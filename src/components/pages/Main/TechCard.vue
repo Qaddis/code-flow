@@ -10,7 +10,7 @@ export default {
 	<article class="tech-card">
 		<img
 			:src="`/techs/${tech}.webp`"
-			:alt="tech + ' Banner'"
+			:alt="tech + ' Logo'"
 			class="tech-card__logo"
 		/>
 		<h4 class="tech-card__title">{{ tech }}</h4>

@@ -33,8 +33,6 @@ export default {
 				if (!this.isTyping) this.isTyping = true
 				if (this.charIndex === 2) this.isImageHidden = true
 
-				console.log(Math.ceil(this.charIndex / 2) + " " + this.value)
-
 				this.value = this.values[this.valueIndex].substring(
 					0,
 					this.charIndex - 1
